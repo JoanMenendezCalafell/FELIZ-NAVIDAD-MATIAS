@@ -288,5 +288,16 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
-
+  
 });
+
+function NotaMedia(dato1, dato2, dato3)
+  {        
+    const nota1 = Number(dato1)
+    const nota2 = Number(dato2)
+    const nota3 = Number(dato3)
+    const media = (nota1 + nota2 + nota3) / 3
+    if (media <5)  resultado = " Suspendido"
+    else resultado = " Aprobado"
+    salida.innerHTML = resultado   
+  }
