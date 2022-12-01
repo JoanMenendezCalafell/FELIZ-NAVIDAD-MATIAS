@@ -294,13 +294,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
 });
 
-function NotaMedia(dato1, dato2, dato3)
+function Precio5(dato1, dato2, dato3)
   {        
-    const nota1 = Number(dato1)
-    const nota2 = Number(dato2)
-    const nota3 = Number(dato3)
-    const media = (nota1 + nota2 + nota3) / 3
-    if (media <5)  resultado = " Suspendido"
-    else resultado = " Aprobado"
-    salida.innerHTML = resultado   
+    const peso = dato1
+    const nombre = dato2
+    const email = dato3
+    const precio = peso == "" || email == ''  ? ''
+                                    : peso <= 10  ? 'El precio final es de 5€'
+                                                  : peso <= 20  ? 'El precio final es de 7,5€'
+                                                                : 'El precio final es de 10€'
+    salida.innerHTML = precio   
   }
