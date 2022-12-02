@@ -299,9 +299,33 @@ function Precio5(dato1, dato2, dato3)
     const peso = dato1
     const nombre = dato2
     const email = dato3
-    const precio = peso == "" || email == ''  ? ''
+    const precio = peso == "" || nombre == "" || email == "" ? ''
                                     : peso <= 10  ? 'El precio final es de 5€'
                                                   : peso <= 20  ? 'El precio final es de 7,5€'
                                                                 : 'El precio final es de 10€'
+    salida.innerHTML = precio   
+  }
+
+function Precio7(dato1, dato2, dato3)
+  {        
+    const peso = dato1
+    const nombre = dato2
+    const email = dato3
+    const precio = peso == "" || nombre == "" || email == "" ? ''
+                                    : peso <= 10  ? 'El precio final es de 7€'
+                                                  : peso <= 20  ? 'El precio final es de 10,5€'
+                                                                : 'El precio final es de 14€'
+    salida.innerHTML = precio   
+  }
+
+function Precio9(dato1, dato2, dato3)
+  {        
+    const peso = dato1
+    const nombre = dato2
+    const email = dato3
+    const precio = peso == "" || nombre == "" || email == "" ? ''
+                                    : peso <= 10  ? 'El precio final es de 9€'
+                                                  : peso <= 20  ? 'El precio final es de 13,5€'
+                                                                : 'El precio final es de 18€'
     salida.innerHTML = precio   
   }
